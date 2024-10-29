@@ -2,6 +2,9 @@ const express = require("express");
 
 const app = express();
 const { peopleRoute } = require('./routes/people')
+const cors = require('cors')
+
+app.use(cors())
 
 app.use('/people', peopleRoute)
 

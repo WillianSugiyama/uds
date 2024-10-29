@@ -7,7 +7,5 @@ module.exports.getPeople = async (page) => {
     return null;
   }
 
-  console.log(result.data);
-
-  return result.data;
+  return result.data.results;
 }
